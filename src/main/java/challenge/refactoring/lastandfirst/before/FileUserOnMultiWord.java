@@ -31,7 +31,7 @@ public class FileUserOnMultiWord extends FileUser {
                     .getSimpleName() + ".txt");
 
             // 行単位でファイルの内容を読み込み List に文字列として格納する
-            lines = IOUtils.readLines(in);
+            lines = IOUtils.readLines(in, "utf-8");
         } catch (IOException e) {
             lines = new ArrayList<String>();
         } finally {

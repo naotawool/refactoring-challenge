@@ -22,7 +22,6 @@ public class FileUser {
     private Map<String, String> words;
 
     public FileUser() {
-
         InputStream in = null;
         List<String> lines = null;
         try {
@@ -30,7 +29,7 @@ public class FileUser {
             in = FileUser.class.getResourceAsStream(FileUser.class
                     .getSimpleName() + ".txt");
 
-            lines = IOUtils.readLines(in);
+            lines = IOUtils.readLines(in, "utf-8");
         } catch (IOException e) {
             lines = new ArrayList<String>();
         } finally {
