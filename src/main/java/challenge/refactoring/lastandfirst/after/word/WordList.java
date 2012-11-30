@@ -5,6 +5,11 @@ import java.util.List;
 
 import com.google.common.collect.Lists;
 
+/**
+ * {@link Words}の{@link List}実装。
+ *
+ * @author naotake
+ */
 public class WordList implements Words {
 
     private List<Word> words;
@@ -37,6 +42,10 @@ public class WordList implements Words {
         return (getByInitial(initialWord) != null);
     }
 
+    /**
+     * {@inheritDoc}<br />
+     * 該当する単語が複数存在した場合は、単語の文字列の自然順序でソートされたものから最初にヒットしたものを返す。
+     */
     @Override
     public Word getByInitial(String initialWord) {
         Collections.sort(words);

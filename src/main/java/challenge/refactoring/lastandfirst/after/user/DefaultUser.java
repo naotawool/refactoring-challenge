@@ -8,6 +8,9 @@ import com.google.common.collect.Maps;
 
 /**
  * しりとりを行うデフォルトユーザ。
+ * <p>
+ * インスタンス時に指定された単語のみを保持する。
+ * </p>
  *
  * @author naotake
  */

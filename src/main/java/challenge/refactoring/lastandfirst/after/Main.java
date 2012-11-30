@@ -7,11 +7,21 @@ import challenge.refactoring.lastandfirst.after.user.User;
 import challenge.refactoring.lastandfirst.after.user.WordTrapUser;
 import challenge.refactoring.lastandfirst.after.word.Word;
 
+/**
+ * リファクタリング後のコードで「しりとり」を実施するメインクラス。
+ *
+ * @author naotake
+ */
 public class Main {
 
     private static User firstAttackUser;
     private static User afterAttackUser;
 
+    /**
+     * 「しりとり」を実施。
+     *
+     * @param args ※使用しない
+     */
     public static void main(String[] args) {
 
         firstAttackUser = new WordTrapUser();

@@ -7,6 +7,11 @@ import java.util.Set;
 
 import com.google.common.collect.Sets;
 
+/**
+ * {@link Words}の{@link Set}実装。
+ *
+ * @author naotake
+ */
 public class WordSet implements Words {
 
     private Set<Word> words;
@@ -39,6 +44,10 @@ public class WordSet implements Words {
         return (getByInitial(initialWord) != null);
     }
 
+    /**
+     * {@inheritDoc}<br />
+     * 該当する単語が複数存在した場合は、単語の文字列の自然順序でソートされたものから最初にヒットしたものを返す。
+     */
     @Override
     public Word getByInitial(String initialWord) {
         List<Word> wordList = new ArrayList<Word>(words);

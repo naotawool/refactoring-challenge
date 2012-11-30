@@ -5,9 +5,10 @@ import challenge.refactoring.lastandfirst.after.word.WordSet;
 import challenge.refactoring.lastandfirst.after.word.Words;
 
 /**
- * しりとりを行うユーザ。<br />
- * ファイルから読み込んだ内容を覚えたユーザ。<br />
- * 開始文字が同じ言葉を許容する。
+ * ファイルから取得した単語の情報を重複無く取り込んだユーザ。
+ * <p>
+ * 取り込む際、重複等を意識している。そのため、取り込むファイルに同一単語が含まれていた場合は、取り込み対象外としている。
+ * </p>
  *
  * @author naotake
  */
@@ -15,6 +16,10 @@ public class OnlyWordFileUser extends AbstractFileUser {
 
     private Words multiWords;
 
+    /**
+     * {@inheritDoc}<br />
+     * 同じ単語を 2 回以上返さぬよう、自身が保持する単語一覧からは除外する。
+     */
     @Override
     public Word nextWord(String initialWord) {
         Word word = multiWords.getByInitial(initialWord);
@@ -33,7 +38,7 @@ public class OnlyWordFileUser extends AbstractFileUser {
     }
 
     @Override
-    protected void initializeWord(String wordStr) {
+    protected void importWord(String wordStr) {
         Word word = Word.of(wordStr);
         multiWords.add(word);
     }

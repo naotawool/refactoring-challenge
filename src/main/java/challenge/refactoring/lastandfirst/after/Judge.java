@@ -7,7 +7,7 @@ import challenge.refactoring.lastandfirst.after.word.Word;
 import challenge.refactoring.lastandfirst.after.word.WordSet;
 
 /**
- * 審判員クラス。
+ * しりとりの判定を行う審判クラス。
  *
  * @author naotake
  */
@@ -28,7 +28,7 @@ public class Judge {
     private static final WordSet SAID_WORDS = new WordSet();
 
     /**
-     * しりとりの最初の文字を取得する。
+     * しりとりの最初の頭文字をランダムに取得する。
      *
      * @return 最初の言葉
      */
@@ -37,15 +37,15 @@ public class Judge {
     }
 
     /**
-     * 指定された言葉が正しいかどうかをチェックする。 <br />
+     * 指定された単語が正しいかどうかを検証する。 <br />
      * 以下の条件に 1 つも該当しなければ{@code true}を返す。
      * <ul>
-     * <li>指定された言葉が空かどうか</li>
-     * <li>指定された言葉が「ん」で終わっているかどうか</li>
-     * <li>既に出た言葉かどうか</li>
+     * <li>指定された単語が空かどうか</li>
+     * <li>指定された単語が「ん」で終わっているかどうか</li>
+     * <li>既に出た単語かどうか</li>
      * </ul>
      *
-     * @param word 言葉
+     * @param word 単語
      * @return 正しい場合は{@code true}
      */
     public boolean isValidWord(Word word) {
@@ -56,10 +56,10 @@ public class Judge {
     }
 
     /**
-     * 指定された言葉を基に、次の文字を返す。
+     * 指定された単語を基に次の頭文字を返す。
      *
-     * @param word 言葉
-     * @return 次の文字
+     * @param word 単語
+     * @return 次の頭文字
      */
     public String nextWord(Word word) {
 
