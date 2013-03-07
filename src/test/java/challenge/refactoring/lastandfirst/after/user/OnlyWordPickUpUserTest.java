@@ -25,6 +25,7 @@ public class OnlyWordPickUpUserTest {
     public void _しまうま_を覚えさせたら_し_の言葉として_しまうま_を返すこと() {
         testee.pickUpWord("しまうま");
         assertThat(testee.nextWord("し"), isWord("しまうま"));
+        assertThat(testee.nextWord("し"), nullValue());
     }
 
     @Test
