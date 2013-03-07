@@ -32,6 +32,12 @@ public class InitialWordTest {
     }
 
     @Test
+    public void 頭文字の_ん_を指定してインスタンスを生成できること() {
+        testee = InitialWord.of("ん");
+        assertThat(testee.toString(), is("ん"));
+    }
+
+    @Test
     public void 単語を指定なかった場合はNullPointerExceptionが送出されること() {
         exception.expect(NullPointerException.class);
         exception.expectMessage(is("頭文字は必須です。"));
