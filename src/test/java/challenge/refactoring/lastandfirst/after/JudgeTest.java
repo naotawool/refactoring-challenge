@@ -42,6 +42,11 @@ public class JudgeTest {
     }
 
     @Test
+    public void _ん_の判定結果としてfalseが返されること() {
+        assertThat(testee.isValidWord(Word.of("ん")), is(false));
+    }
+
+    @Test
     public void _ようかん_の判定結果としてfalseが返されること() {
         assertThat(testee.isValidWord(Word.of("ようかん")), is(false));
     }
