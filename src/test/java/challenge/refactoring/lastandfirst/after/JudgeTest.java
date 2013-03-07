@@ -73,6 +73,11 @@ public class JudgeTest {
     }
 
     @Test
+    public void _えヴぁ_の次のしりとり文字として_よ_が返されること() {
+        assertThat(testee.nextWord(Word.of("えヴぁ")), is("あ"));
+    }
+
+    @Test
     public void _つりー_の次のしりとり文字として_り_が返されること() {
         assertThat(testee.nextWord(Word.of("つり－")), is("り"));
     }
