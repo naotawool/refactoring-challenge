@@ -51,4 +51,10 @@ public class FileUserOnMultiWordTest {
         assertThat(testee.nextWord("せ"), is("せんせい"));
         assertThat(testee.nextWord("せ"), nullValue());
     }
+
+    @Test
+    public void _は_を指定するとファイルから読み込んだ内容を返すこと() {
+        assertThat(testee.nextWord("は"), is("はげ"));
+        assertThat(testee.nextWord("は"), nullValue());
+    }
 }
