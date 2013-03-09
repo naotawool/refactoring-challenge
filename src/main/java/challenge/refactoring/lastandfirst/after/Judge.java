@@ -70,6 +70,12 @@ public class Judge {
         return replaceLowerToUpper(lastWord);
     }
 
+    /**
+     * 指定された単語に含まれる小文字を大文字へ置換する。
+     *
+     * @param word 単語
+     * @return 大文字へ置換した単語
+     */
     private String replaceLowerToUpper(String word) {
         return StringUtils.replaceEach(word, LOWER_CASE_WORD, UPPER_CASE_WORD);
     }
