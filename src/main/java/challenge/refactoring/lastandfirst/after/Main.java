@@ -14,7 +14,9 @@ import challenge.refactoring.lastandfirst.after.word.Word;
  */
 public class Main {
 
+    /** 先攻ユーザ */
     private static User firstAttackUser;
+    /** 後攻ユーザ */
     private static User afterAttackUser;
 
     /**
