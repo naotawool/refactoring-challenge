@@ -62,6 +62,8 @@ public class JudgeTest {
 
     @Test
     public void 開始の文字がランダムに何かしら返されること() {
-        assertThat(testee.getStartWord(), notNullValue());
+        String result = testee.getStartWord();
+        assertThat(result, notNullValue());
+        assertThat(result.length(), is(1));
     }
 }
