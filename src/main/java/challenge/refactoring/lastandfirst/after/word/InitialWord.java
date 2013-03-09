@@ -68,6 +68,9 @@ public class InitialWord {
         return initialWord.hashCode();
     }
 
+    /**
+     * @return 頭文字
+     */
     @Override
     public String toString() {
         return initialWord;
