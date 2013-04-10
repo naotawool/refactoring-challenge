@@ -28,6 +28,7 @@ public class DefaultUser {
         WORDS.put("や", "やくると");
         WORDS.put("と", "とーます");
         WORDS.put("す", "すいか");
+        WORDS.put("か", "かぶき");
     }
 
     public String nextWord(String word) {
