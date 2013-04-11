@@ -29,6 +29,7 @@ public class DefaultUser {
         WORDS.put("と", "とーます");
         WORDS.put("す", "すいか");
         WORDS.put("か", "かぶき");
+        WORDS.put("き", "きーま");
     }
 
     public String nextWord(String word) {
