@@ -3,6 +3,7 @@
 .project
 .settings
 target
+work
 
 # Package Files #
 *.jar
