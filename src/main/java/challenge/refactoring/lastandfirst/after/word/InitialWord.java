@@ -41,6 +41,12 @@ public class InitialWord {
         return new InitialWord(initialWord);
     }
 
+    /**
+     * 単語を検証する。
+     * 
+     * @param word 検証対象
+     * @throws NullPointerException 空文字 or NULL の場合
+     */
     private static void isValid(String word) {
         if (StringUtils.isEmpty(word)) {
             throw new NullPointerException("頭文字は必須です。");
