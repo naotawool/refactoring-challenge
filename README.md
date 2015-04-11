@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/naotawool/refactoring-challenge.svg?branch=master)](https://travis-ci.org/naotawool/refactoring-challenge)
 
+[![Coverage Status](https://coveralls.io/repos/naotawool/refactoring-challenge/badge.svg?branch=master)](https://coveralls.io/r/naotawool/refactoring-challenge?branch=master)
+
 ----
 
 # 「リファクタリング勉強会 #03」
