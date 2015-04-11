@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/naotawool/refactoring-challenge.svg?branch=master)](https://travis-ci.org/naotawool/refactoring-challenge)
+
+----
+
 # 「リファクタリング勉強会 #03」
 
 社内勉強会「リファクタリング勉強会」の第 3 回で使用するコードです。
