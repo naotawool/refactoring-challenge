@@ -1,6 +1,5 @@
-master [![Build Status](https://travis-ci.org/naotawool/refactoring-challenge.svg?branch=master)](https://travis-ci.org/naotawool/refactoring-challenge)
-
-master [![Coverage Status](https://coveralls.io/repos/naotawool/refactoring-challenge/badge.svg?branch=master)](https://coveralls.io/r/naotawool/refactoring-challenge?branch=master)
+master [![Build Status](https://travis-ci.org/naotawool/refactoring-challenge.png?branch=master)](https://travis-ci.org/naotawool/refactoring-challenge)
+ [![Coverage Status](https://coveralls.io/repos/naotawool/refactoring-challenge/badge.png?branch=master)](https://coveralls.io/r/naotawool/refactoring-challenge?branch=master)
 
 ----
 
